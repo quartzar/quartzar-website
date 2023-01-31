@@ -5,6 +5,7 @@
     "build:css": "postcss tailwind.source.css -o public/build/tailwind.css",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "gh-pages": "nuxt generate --gh-pages",
     "preview": "nuxt preview",
     "lint": "eslint ."
   },

@@ -15,6 +15,13 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
   ],
   target: 'static',
+  // Allows page refresh to work on github pages
+  generate: {
+    fallback: "404.html"
+  },
+  // router: {
+  //   base: '/quartzar.github.io/'
+  // },
   // https://github.com/nuxt-community/google-fonts-module
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
